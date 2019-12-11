@@ -1,0 +1,129 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+		    "path" : "pages/home",
+		    "style" : {}
+		}
+		,
+		/* 登录页 */
+		{
+			"path": "pages/login",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		/* 平台页面 --start */
+		{
+			"path": "pages/platform/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		}, {
+			"path": "pages/platform/mine",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+		/* 平台页面 --end */
+
+		/* 商家页面 --start */
+		{
+			"path": "pages/commercial/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/commercial/mine",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+			"path": "pages/commercial/validate",
+			"style": {
+				"navigationBarTitleText": "核销"
+			}
+		},
+		{
+			"path": "pages/commercial/validation/result",
+			"style": {
+				"navigationBarTitleText": "核销结果"
+			}
+		},
+		{
+			"path": "pages/commercial/order/preview",
+			"style": {
+				"navigationBarTitleText": "订单确认"
+			}
+		},
+		{
+			"path": "pages/commercial/mine/reservation/reservation",
+			"style": {
+				"navigationBarTitleText": "我的预约"
+			}
+		}, {
+			"path": "pages/commercial/mine/income/income",
+			"style": {
+				"navigationBarTitleText": "我的收入"
+			}
+		}, {
+			"path": "pages/commercial/mine/income/detail",
+			"style": {
+				"navigationBarTitleText": "收入详情"
+			}
+		},
+		{
+			"path": "pages/commercial/mine/authorize/authorize",
+			"style": {
+				"navigationBarTitleText": "提交认证"
+			}
+		},
+		{
+			"path": "pages/commercial/mine/authorize/handle",
+			"style": {
+				"navigationBarTitleText": "认证处理"
+			}
+		},{
+			"path": "pages/commercial/pay/pay",
+			"style": {
+				"navigationBarTitleText": "支付页面"
+			}
+		}
+		/* 商家页面 --start */
+        ,{
+            "path" : "pages/platform/carinfo",
+            "style" : {}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "",
+		"navigationBarBackgroundColor": "#1A2632",
+		"backgroundColor": "#1A2632"
+	},
+	"tabBar": {
+		"selectedColor": "#FF1C61",
+		"color": "#989898",
+		"backgroundColor": "#1A2632",
+		"list": [{
+				"pagePath": "pages/commercial/index",
+				"iconPath": "static/tabbar/index.png",
+				"selectedIconPath": "static/tabbar/index-sel.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/commercial/validate",
+				"iconPath": "static/tabbar/validate.png",
+				"selectedIconPath": "static/tabbar/validate-sel.png",
+				"text": "核销"
+			},
+			{
+				"pagePath": "pages/commercial/mine",
+				"iconPath": "static/tabbar/mine.png",
+				"selectedIconPath": "static/tabbar/mine-sel.png",
+				"text": "我的"
+			}
+		]
+	}
+}
